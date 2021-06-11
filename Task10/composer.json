@@ -1,0 +1,13 @@
+{
+    "name": "parshinad/task10",
+    "require": {
+        "gabordemooij/redbean": "^5.7"
+    },
+    "scripts": {
+        "migrate": "sqlite3 data/hospital.db < data/db_init.sql",
+        "serve": "cd public && php -S localhost:8000"
+    },
+    "config": {
+        "process-timeout": 0
+    }
+}
